@@ -9,7 +9,7 @@ body {
 #grid-skt {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 70px auto 530px 85px;
+    grid-template-rows: 70px auto 540px 85px;
     height: 100vh;
 }
 #header {
@@ -76,8 +76,23 @@ position: relative;
     color: greenyellow;
 }
 #intro .intro__flecha img {
-    width: 70px;
-    padding-top: 60px;
+    width: 90px;
+    transform: translate(0, 225px);
+    animation-name: mi-flecha;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes mi-flecha {
+    0% {
+        transform: translate(0, 225px);
+    }
+    40% {
+        transform: translate(0, 245px);
+    }
+    100% {
+        transform: translate(0, 225px);
+    }
 }
 #intro2 .intro2__title {
     font-size: 40px;
@@ -125,7 +140,7 @@ section h2 b {
 #video {
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background: radial-gradient(black, rgb(65, 63, 63));
     display: flex;
 }
 #video iframe .video__1 {
@@ -136,14 +151,16 @@ section h2 b {
 #video .video__text1 {
     color: white;
     grid-area: text1;
-    width: 700px;
+    width: 100%;
     text-align: center;
+    max-width: 530px;
 }
 #video .video__text2 {
     color: white;
     grid-area: text2;
-    width: 700px;
+    width: 100%;
     text-align: center;
+    max-width: 530px;
 }
 #video iframe .video__2 { 
     margin: 30px 30px;
@@ -156,10 +173,10 @@ section h2 b {
     padding: 10px;
     grid-template-areas:"vid1 vid2"
                         "text1 text2";
-    justify-items:stretch;
     align-items: stretch;
     justify-content: space-evenly;
     align-content: center;
+    justify-items: center;
 
 }
 
