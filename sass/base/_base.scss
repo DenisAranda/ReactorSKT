@@ -5,7 +5,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 70px auto 530px 85px;
-    grid-template-rows: 70px auto 540px 85px;
+    grid-template-rows: 70px auto 545px 85px;
     height: 100vh;
   }
   @keyframes mi-flecha {
@@ -13,9 +13,21 @@ body {
         transform: translate(0, 225px);
     }
     40% {
-        transform: translate(0, 245px);
+        transform: translate(0, 240px);
     }
     100% {
         transform: translate(0, 225px);
+    }
+}
+section {
+    background-color: white;
+    h2 { 
+        b {
+            color: black;
+            font-size: 60px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
     }
 }

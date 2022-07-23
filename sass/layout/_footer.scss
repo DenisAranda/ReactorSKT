@@ -1,16 +1,16 @@
 #footer {
-    background-color:rgb(47, 44, 44);
+    background-color:rgb(233, 233, 233);
     display: flex;
     justify-content: space-between;
-    color: white;
+    color: black;
     .footer__redes {
         float: left;
         padding: 10px;
         a {
             text-decoration: none;
-            color: gray;
+            color: black;
             list-style: none;
-            :hover {
+            &:hover {
                 color: bisque;
             }
         }
@@ -24,8 +24,8 @@
         p {
             a {
                 text-decoration: none;
-                color: gray;
-                :hover {
+                color: black;
+                &:hover {
                     color: bisque;
                 }
             }
