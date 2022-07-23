@@ -1,0 +1,34 @@
+#footer {
+    background-color:rgb(47, 44, 44);
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    .footer__redes {
+        float: left;
+        padding: 10px;
+        a {
+            text-decoration: none;
+            color: gray;
+            list-style: none;
+            :hover {
+                color: bisque;
+            }
+        }
+    }
+    .footer__servicios {
+        float: right;
+        padding: 10px;
+        h4 {
+            margin-left: 100px;
+        }
+        p {
+            a {
+                text-decoration: none;
+                color: gray;
+                :hover {
+                    color: bisque;
+                }
+            }
+        }
+    }
+}

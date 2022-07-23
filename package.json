@@ -1,10 +1,11 @@
 {
-  "name": "mi-repositorio",
+  "name": "mi-repositorio---copia---copia",
   "version": "1.0.0",
-  "description": "",
+  "description": "Migrando pryecto a sass",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass" : "node-sass sass/main.scss css/main.css --watch"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/DenisAranda/ReactorSKT/issues"
   },
-  "homepage": "https://github.com/DenisAranda/ReactorSKT#readme"
+  "homepage": "https://github.com/DenisAranda/ReactorSKT#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
 }

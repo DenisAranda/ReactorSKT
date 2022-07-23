@@ -1,0 +1,34 @@
+#header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    display:flex;
+    justify-content:space-between;
+    .header__logo { 
+        img {
+            width: 120px;
+            float: left;
+            padding: 5px;
+            margin-left: 35px;
+        }
+    }
+    .header__menu { 
+        ul {
+            li {
+                margin-left: 15px;
+                list-style: none;
+                float: left;
+                padding: 25px 25px;
+                position: relative;
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-weight: bold;
+                    :hover {
+                        color: green;
+                    }
+                }
+            }
+        }
+    }
+}

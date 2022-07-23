@@ -1,0 +1,21 @@
+body {
+    font-family: $font-family;
+  }
+  #grid-skt {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px auto 530px 85px;
+    grid-template-rows: 70px auto 540px 85px;
+    height: 100vh;
+  }
+  @keyframes mi-flecha {
+    0% {
+        transform: translate(0, 225px);
+    }
+    40% {
+        transform: translate(0, 245px);
+    }
+    100% {
+        transform: translate(0, 225px);
+    }
+}
