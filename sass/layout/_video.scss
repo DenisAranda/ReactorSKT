@@ -39,7 +39,7 @@
         max-width: 530px;
     }
     #video {
-        display: grid;
+        display: none;
         gap: 10px;
         padding: 10px;
         grid-template-areas:"vid1 vid2"

@@ -12,7 +12,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 70px auto 530px 85px;
-  grid-template-rows: 70px auto 545px 85px;
+  grid-template-rows: 70px auto 580px 120px;
   height: 100vh;
 }
 
@@ -39,41 +39,54 @@ section h2 b {
 }
 
 @media (max-width: 320px) {
-  #header {
+  #header1 {
     display: none;
   }
 }
+#header2 {
+  display: flex;
+}
+
 @media (max-width: 600px) {
-  #header {
+  #header1 {
     display: none;
   }
 }
-#header {
+#header2 {
+  display: flex;
+}
+
+#header2 {
+  display: none;
+}
+
+#header1 {
   position: sticky;
   top: 0;
   background-color: white;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-#header .header__logo img {
+#header1 .header__logo img {
   width: 120px;
   float: left;
   padding: 5px;
   margin-left: 35px;
 }
-#header .header__menu ul li {
+#header1 .header__menu ul li {
   margin-left: 15px;
   list-style: none;
   float: left;
   padding: 25px 25px;
   position: relative;
 }
-#header .header__menu ul li a {
+#header1 .header__menu ul li a {
   text-decoration: none;
   color: black;
   font-weight: bold;
 }
-#header .header__menu ul li a:hover {
+#header1 .header__menu ul li a:hover {
   color: green;
 }
 
@@ -190,7 +203,7 @@ section h2 b {
   max-width: 530px;
 }
 #video #video {
-  display: grid;
+  display: none;
   gap: 10px;
   padding: 10px;
   grid-template-areas: "vid1 vid2" "text1 text2";
