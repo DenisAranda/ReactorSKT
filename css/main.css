@@ -42,24 +42,25 @@ section h2 b {
   #header1 {
     display: none;
   }
+  #header2 {
+    display: flex;
+  }
 }
-#header2 {
-  display: flex;
-}
-
 @media (max-width: 600px) {
+  #header2 {
+    display: flex;
+  }
   #header1 {
     display: none;
   }
+  #grid-skt {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px auto 530px 85px;
+    grid-template-rows: 55px auto 700px 120px;
+    height: 100vh;
+  }
 }
-#header2 {
-  display: flex;
-}
-
-#header2 {
-  display: none;
-}
-
 #header1 {
   position: sticky;
   top: 0;
@@ -167,7 +168,7 @@ section h2 b {
 
 #video {
   background-color: white;
-  display: grid;
+  display: none;
   gap: 10px;
   padding: 10px;
   grid-template-areas: "vid1 vid2" "text1 text2";
@@ -278,6 +279,15 @@ section h2 b {
 }
 #footer .footer__servicios p a:hover {
   color: bisque;
+}
+
+@media (min-width: 800px) {
+  #header2 {
+    display: none;
+  }
+  #header1 {
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

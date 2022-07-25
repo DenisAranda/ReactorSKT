@@ -1,6 +1,6 @@
 #video {
     background-color: white;
-    display: grid;
+    display: none;
     gap: 10px;
     padding: 10px;
     grid-template-areas:"vid1 vid2"
@@ -21,7 +21,7 @@
             grid-area: vid2;
             width: 100%;
         }
-    }
+    } 
     .video__text1 {
         color: black;
         grid-area: text1;
@@ -50,4 +50,5 @@
         align-content: center;
         justify-items: center;
     }
-}
+} 
+
