@@ -22,11 +22,12 @@
     }
     .intro__text {
         color: greenyellow;
+        width: auto;
     }
     .intro__flecha { 
         img {
             width: 70px;
-            padding-top: 60px;
+            padding-top: 40px;
             width: 90px;
             transform: translate(0, 225px);
             animation-name: mi-flecha;

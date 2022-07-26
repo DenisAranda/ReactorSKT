@@ -12,7 +12,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 70px auto 530px 85px;
-  grid-template-rows: 70px auto 580px 120px;
+  grid-template-rows: auto auto auto auto;
   height: 100vh;
 }
 
@@ -46,7 +46,7 @@ section h2 b {
     display: flex;
   }
 }
-@media (max-width: 600px) {
+@media (min-width: 350px) {
   #header2 {
     display: flex;
   }
@@ -57,10 +57,44 @@ section h2 b {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 70px auto 530px 85px;
-    grid-template-rows: 55px auto 700px 120px;
+    grid-template-rows: auto auto auto auto;
     height: 100vh;
   }
+  #intro {
+    background-image: url(../img/fondo1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90em;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  #intro .intro__flecha img {
+    width: 70px;
+    padding-top: 5px;
+    width: 90px;
+    transform: translate(0, 225px);
+    animation-name: mi-flecha;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
 }
+#video {
+  background-color: white;
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+  grid-template-areas: "vid1" "text1" "vid2" "text2";
+  align-items: stretch;
+  justify-content: space-evenly;
+  align-content: center;
+  justify-items: center;
+}
+
 #header1 {
   position: sticky;
   top: 0;
@@ -96,7 +130,7 @@ section h2 b {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 700px;
+  height: 100vh;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -116,10 +150,11 @@ section h2 b {
 }
 #intro .intro__text, #intro2 .intro__text {
   color: greenyellow;
+  width: auto;
 }
 #intro .intro__flecha img, #intro2 .intro__flecha img {
   width: 70px;
-  padding-top: 60px;
+  padding-top: 40px;
   width: 90px;
   transform: translate(0, 225px);
   animation-name: mi-flecha;
@@ -168,7 +203,7 @@ section h2 b {
 
 #video {
   background-color: white;
-  display: none;
+  display: grid;
   gap: 10px;
   padding: 10px;
   grid-template-areas: "vid1 vid2" "text1 text2";
@@ -220,7 +255,7 @@ section h2 b {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 700px;
+  height: 100vh;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -281,12 +316,38 @@ section h2 b {
   color: bisque;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 600px) {
   #header2 {
     display: none;
   }
   #header1 {
+    position: sticky;
+    top: 0;
+    background-color: white;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #header1 .header__logo img {
+    width: 120px;
+    float: left;
+    padding: 5px;
+    margin-left: 35px;
+  }
+  #header1 .header__menu ul li {
+    margin-left: 15px;
+    list-style: none;
+    float: left;
+    padding: 25px 25px;
+    position: relative;
+  }
+  #header1 .header__menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  #header1 .header__menu ul li a:hover {
+    color: green;
   }
 }
 
