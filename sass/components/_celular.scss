@@ -1,0 +1,44 @@
+@media (max-width: 320px) {
+    #header1 {
+        display: none;
+    }
+    #header2 {
+        display: flex;
+    }
+    #video {
+        background-color: white;
+        display: grid;
+        gap: 10px;
+        padding: 10px;
+        grid-template-areas:"vid1"
+                            "text1" 
+                            "vid2"
+                            "text2";
+        align-items: stretch;
+        justify-content: space-evenly;
+        align-content: center;
+        justify-items: center;
+    }
+    #intro, #intro2, #formulario {
+        background-image: $background-image;
+      background-repeat: $background-repeat;
+      background-size: $background-size;
+      background-position: $background-position;
+      height: 43em;
+      display: flex;
+      flex-flow:$flex-flow;
+      justify-content: $justify-content;
+      align-items: $align-items;
+      width: $width;
+    }
+      .intro__flecha { 
+          img {
+              width: 90px;
+              transform: translate(0, 225px);
+              animation-name: mi-flecha;
+              animation-duration: 1.5s;
+              animation-iteration-count: infinite;
+              animation-timing-function: linear;
+          }
+      }
+      }

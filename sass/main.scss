@@ -1,11 +1,11 @@
-@import "./base/resets";
 @import "./abstracts/variables";
 @import "./base/base";
-@import "./components/celular/celular";
-@import "./components/tablet";
+@import "./base/resets";
 @import "./layout/header";
 @import "./layout/inicio";
 @import "./layout/video";
 @import "./layout/formulario";
 @import "./layout/footer";
-@import "./components/celular/desktop";
+@import "./components/desktop";
+@import "./components/tablet";
+@import "./components/celular";

@@ -1,4 +1,4 @@
-@media (min-width: 350px) {
+@media (max-width: 768px) {
     #header2 {
     display:flex;
     }
@@ -12,21 +12,19 @@
         grid-template-rows: auto auto auto auto;
         height: 100vh;
       }
-    #intro {
+    #intro, #formulario, #intro2 {
       background-image: $background-image;
     background-repeat: $background-repeat;
     background-size: $background-size;
     background-position: $background-position;
-    height: 90em;
-    display: $display;
+    height: 40em;
+    display: flex;
     flex-flow:$flex-flow;
     justify-content: $justify-content;
     align-items: $align-items;
     width: $width;
     .intro__flecha { 
         img {
-            width: 70px;
-            padding-top: 5px;
             width: 90px;
             transform: translate(0, 225px);
             animation-name: mi-flecha;
@@ -36,7 +34,7 @@
         }
     }
     }
-}
+
 #video {
     background-color: white;
     display: grid;
@@ -50,4 +48,5 @@
     justify-content: space-evenly;
     align-content: center;
     justify-items: center;
+}
 }

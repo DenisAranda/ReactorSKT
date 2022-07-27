@@ -38,17 +38,5 @@
         text-align: center;
         max-width: 530px;
     }
-    #video {
-        display: none;
-        gap: 10px;
-        padding: 10px;
-        grid-template-areas:"vid1 vid2"
-                        "text1 text2";
-        justify-items:stretch;
-        align-items: stretch;
-        justify-content: space-evenly;
-        align-content: center;
-        justify-items: center;
-    }
 } 
 
