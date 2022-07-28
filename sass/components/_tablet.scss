@@ -10,19 +10,19 @@
         grid-template-columns: 1fr;
         grid-template-rows: 70px auto 530px 85px;
         grid-template-rows: auto auto auto auto;
-        height: 100vh;
+        height: auto;
       }
-    #intro, #formulario, #intro2 {
+    #intro, #formulario, #intro2, #intro3 {
       background-image: $background-image;
     background-repeat: $background-repeat;
     background-size: $background-size;
     background-position: $background-position;
-    height: 40em;
+    height: 40em; 
     display: flex;
     flex-flow:$flex-flow;
     justify-content: $justify-content;
-    align-items: $align-items;
-    width: $width;
+    align-items: $align-items; 
+    width: 48em;
     .intro__flecha { 
         img {
             width: 90px;

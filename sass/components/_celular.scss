@@ -1,10 +1,32 @@
-@media (max-width: 320px) {
+@media (max-width: 420px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: $font-family;
+      }
+      #grid-skt {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 70px auto 530px 85px;
+        grid-template-rows: auto auto auto auto;
+        height: auto;
+      }
     #header1 {
         display: none;
     }
     #header2 {
         display: flex;
     }
+    #grid-skt {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 70px auto 530px 85px;
+        grid-template-rows: auto auto auto auto;
+        height: auto;
+      }
     #video {
         background-color: white;
         display: grid;
@@ -19,17 +41,52 @@
         align-content: center;
         justify-items: center;
     }
-    #intro, #intro2, #formulario {
+    #intro, #intro2 {
         background-image: $background-image;
       background-repeat: $background-repeat;
       background-size: $background-size;
       background-position: $background-position;
-      height: 43em;
+      height: 55em;
       display: flex;
       flex-flow:$flex-flow;
       justify-content: $justify-content;
       align-items: $align-items;
-      width: $width;
+      width: auto;
+      .intro2__text-1 { 
+        p {
+            color: white;
+            max-width: 15em;
+            width:100% ;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            font-weight: bold;
+        }
+    }
+    }
+    #formulario {
+        background-image: $background-image;
+      background-repeat: $background-repeat;
+      background-size: $background-size;
+      background-position: $background-position;
+      height: 50em;
+      display: flex;
+      flex-flow:$flex-flow;
+      justify-content: $justify-content;
+      align-items: $align-items;
+      width: fit-content;
+    }
+    #intro3 {
+        background-image: $background-image;
+      background-repeat: $background-repeat;
+      background-size: $background-size;
+      background-position: $background-position;
+      height: 55em;
+      display: flex;
+      flex-flow:$flex-flow;
+      justify-content: $justify-content;
+      align-items: $align-items;
+      width: fit-content;
     }
       .intro__flecha { 
           img {
@@ -41,4 +98,70 @@
               animation-timing-function: linear;
           }
       }
-      }
+      .formulario__title {
+        h2 {
+            color: white;
+            font-size: 30px;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+    }
+    .txt1 {
+        width: 12.2em;
+    }
+    .txt2 {
+        width: 12.5em;
+    }
+    .mail {
+        width: 25em;
+    }
+    .cons {
+        width: 25em;
+        height: 5em;
+    }
+    #footer {
+        background-color:rgb(233, 233, 233);
+        display: flex;
+        justify-content: space-between;
+        color: black;
+        .footer__redes {
+            float: left;
+            padding: 10px;
+            font-size: 15px;
+            h4 {
+                font-size: 15px;
+            
+            a {
+                text-decoration: none;
+                color: black;
+                list-style: none;
+                font-size: 15px;
+                &:hover {
+                    color: bisque;
+                }
+            }
+        }
+        }
+        .footer__servicios {
+            float: right;
+            padding: 10px;
+            h4 {
+                margin-left: 100px;
+                font-size: 15px;
+            }
+            p {
+                font-size: 15px;
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-size: 15px;
+                    &:hover {
+                        color: bisque;
+                    }
+                }
+            }
+        }
+    }
+}
+      

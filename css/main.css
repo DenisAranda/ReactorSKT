@@ -7,7 +7,7 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: 70px auto 530px 85px;
   grid-template-rows: auto auto auto auto;
-  height: 100vh;
+  height: auto;
 }
 
 @keyframes mi-flecha {
@@ -68,7 +68,7 @@ section h2 b {
   color: green;
 }
 
-#intro, #intro2 {
+#intro, #intro2, #intro3 {
   background-image: url(../img/fondo1.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -80,22 +80,22 @@ section h2 b {
   align-items: center;
   width: 100%;
 }
-#intro .intro__title, #intro2 .intro__title {
+#intro .intro__title, #intro2 .intro__title, #intro3 .intro__title {
   font-size: 40px;
   justify-content: center;
   align-items: center;
 }
-#intro .intro__title h1, #intro2 .intro__title h1 {
+#intro .intro__title h1, #intro2 .intro__title h1, #intro3 .intro__title h1 {
   color: white;
 }
-#intro .intro__title h1 span, #intro2 .intro__title h1 span {
+#intro .intro__title h1 span, #intro2 .intro__title h1 span, #intro3 .intro__title h1 span {
   color: greenyellow;
 }
-#intro .intro__text, #intro2 .intro__text {
+#intro .intro__text, #intro2 .intro__text, #intro3 .intro__text {
   color: greenyellow;
   width: auto;
 }
-#intro .intro__flecha img, #intro2 .intro__flecha img {
+#intro .intro__flecha img, #intro2 .intro__flecha img, #intro3 .intro__flecha img {
   width: 70px;
   padding-top: 40px;
   width: 90px;
@@ -105,7 +105,7 @@ section h2 b {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
-#intro .intro__text-1 p, #intro2 .intro__text-1 p {
+#intro .intro__text-1 p, #intro2 .intro__text-1 p, #intro3 .intro__text-1 p {
   color: white;
   width: 700px;
   align-items: center;
@@ -113,18 +113,18 @@ section h2 b {
   font-size: 20px;
   font-weight: bold;
 }
-#intro .intro2__title, #intro2 .intro2__title {
+#intro .intro2__title, #intro2 .intro2__title, #intro3 .intro2__title {
   font-size: 40px;
   justify-content: center;
   align-items: center;
 }
-#intro .intro2__title h1, #intro2 .intro2__title h1 {
+#intro .intro2__title h1, #intro2 .intro2__title h1, #intro3 .intro2__title h1 {
   color: white;
 }
-#intro .intro2__title h1 span, #intro2 .intro2__title h1 span {
+#intro .intro2__title h1 span, #intro2 .intro2__title h1 span, #intro3 .intro2__title h1 span {
   color: greenyellow;
 }
-#intro .intro2__text-1 p, #intro2 .intro2__text-1 p {
+#intro .intro2__text-1 p, #intro2 .intro2__text-1 p, #intro3 .intro2__text-1 p {
   color: white;
   max-width: 700px;
   width: 100%;
@@ -133,10 +133,10 @@ section h2 b {
   font-size: 20px;
   font-weight: bold;
 }
-#intro section, #intro2 section {
+#intro section, #intro2 section, #intro3 section {
   background-color: black;
 }
-#intro section h2 b, #intro2 section h2 b {
+#intro section h2 b, #intro2 section h2 b, #intro3 section h2 b {
   color: greenyellow;
   font-size: 60px;
   justify-content: center;
@@ -202,17 +202,17 @@ section h2 b {
   margin-bottom: 60px;
 }
 #formulario .txt1 {
-  width: 200px;
+  width: 12.2em;
 }
 #formulario .txt2 {
-  width: 200px;
+  width: 12.5em;
 }
 #formulario .mail {
-  width: 400px;
+  width: 25em;
 }
 #formulario .cons {
-  width: 400px;
-  height: 100px;
+  width: 25em;
+  height: 5em;
 }
 
 #footer {
@@ -305,9 +305,9 @@ section h2 b {
     grid-template-columns: 1fr;
     grid-template-rows: 70px auto 530px 85px;
     grid-template-rows: auto auto auto auto;
-    height: 100vh;
+    height: auto;
   }
-  #intro, #formulario, #intro2 {
+  #intro, #formulario, #intro2, #intro3 {
     background-image: url(../img/fondo1.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -317,9 +317,9 @@ section h2 b {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 48em;
   }
-  #intro .intro__flecha img, #formulario .intro__flecha img, #intro2 .intro__flecha img {
+  #intro .intro__flecha img, #formulario .intro__flecha img, #intro2 .intro__flecha img, #intro3 .intro__flecha img {
     width: 90px;
     transform: translate(0, 225px);
     animation-name: mi-flecha;
@@ -339,12 +339,34 @@ section h2 b {
     justify-items: center;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 420px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "-apple-system, BlinkMacSystemFont", "Segoe UI", "Roboto, Oxygen, Ubuntu, Cantarell", "Open Sans", "Helvetica Neue", "sans-serif";
+  }
+  #grid-skt {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px auto 530px 85px;
+    grid-template-rows: auto auto auto auto;
+    height: auto;
+  }
   #header1 {
     display: none;
   }
   #header2 {
     display: flex;
+  }
+  #grid-skt {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px auto 530px 85px;
+    grid-template-rows: auto auto auto auto;
+    height: auto;
   }
   #video {
     background-color: white;
@@ -357,17 +379,50 @@ section h2 b {
     align-content: center;
     justify-items: center;
   }
-  #intro, #intro2, #formulario {
+  #intro, #intro2 {
     background-image: url(../img/fondo1.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 43em;
+    height: 55em;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+    width: auto;
+  }
+  #intro .intro2__text-1 p, #intro2 .intro2__text-1 p {
+    color: white;
+    max-width: 15em;
     width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  #formulario {
+    background-image: url(../img/fondo1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50em;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+  }
+  #intro3 {
+    background-image: url(../img/fondo1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 55em;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
   }
   .intro__flecha img {
     width: 90px;
@@ -376,6 +431,68 @@ section h2 b {
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+  }
+  .formulario__title h2 {
+    color: white;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  .txt1 {
+    width: 12.2em;
+  }
+  .txt2 {
+    width: 12.5em;
+  }
+  .mail {
+    width: 25em;
+  }
+  .cons {
+    width: 25em;
+    height: 5em;
+  }
+  #footer {
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    justify-content: space-between;
+    color: black;
+  }
+  #footer .footer__redes {
+    float: left;
+    padding: 10px;
+    font-size: 15px;
+  }
+  #footer .footer__redes h4 {
+    font-size: 15px;
+  }
+  #footer .footer__redes h4 a {
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    font-size: 15px;
+  }
+  #footer .footer__redes h4 a:hover {
+    color: bisque;
+  }
+  #footer .footer__servicios {
+    float: right;
+    padding: 10px;
+  }
+  #footer .footer__servicios h4 {
+    margin-left: 100px;
+    font-size: 15px;
+  }
+  #footer .footer__servicios p {
+    font-size: 15px;
+  }
+  #footer .footer__servicios p a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+  }
+  #footer .footer__servicios p a:hover {
+    color: bisque;
   }
 }
 

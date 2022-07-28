@@ -6,7 +6,7 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: 70px auto 530px 85px;
     grid-template-rows: auto auto auto auto;
-    height: 100vh;
+    height: auto;
   }
   @keyframes mi-flecha {
     0% {
