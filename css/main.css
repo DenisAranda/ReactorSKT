@@ -147,6 +147,15 @@ main {
   align-items: center;
   display: flex;
 }
+#intro .mapa, #intro2 .mapa, #intro3 .mapa {
+  width: 70%;
+}
+#intro .mapa .map1, #intro2 .mapa .map1, #intro3 .mapa .map1 {
+  width: 100%;
+  height: 25em;
+  display: flex;
+  align-items: center;
+}
 
 #video {
   background-color: white;
@@ -338,16 +347,8 @@ main {
     height: auto;
   }
   #intro, #formulario, #intro2, #intro3 {
-    background-image: url(../img/fondo1.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     height: 40em;
     display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    width: 48em;
   }
   #intro .intro__flecha img, #formulario .intro__flecha img, #intro2 .intro__flecha img, #intro3 .intro__flecha img {
     width: 90px;
@@ -368,65 +369,6 @@ main {
     align-content: center;
     justify-items: center;
   }
-  #video iframe .video__1 {
-    margin: 30px 30px;
-    grid-area: vid1;
-    width: 100%;
-  }
-  #video iframe .video__2 {
-    margin: 30px 30px;
-    grid-area: vid2;
-    width: 100%;
-  }
-  #video .video__text1 {
-    color: black;
-    grid-area: text1;
-    width: 700px;
-    width: 100%;
-    text-align: center;
-    max-width: 530px;
-  }
-  #video .video__text2 {
-    color: black;
-    grid-area: text2;
-    width: 700px;
-    width: 100%;
-    text-align: center;
-    max-width: 530px;
-  }
-  #footer {
-    background-color: rgb(233, 233, 233);
-    display: flex;
-    justify-content: space-between;
-    color: black;
-    width: 100%;
-  }
-  #footer .footer__redes {
-    float: left;
-    padding: 10px;
-  }
-  #footer .footer__redes a {
-    text-decoration: none;
-    color: black;
-    list-style: none;
-  }
-  #footer .footer__redes a:hover {
-    color: bisque;
-  }
-  #footer .footer__servicios {
-    float: right;
-    padding: 10px;
-  }
-  #footer .footer__servicios h4 {
-    margin-left: 100px;
-  }
-  #footer .footer__servicios p a {
-    text-decoration: none;
-    color: black;
-  }
-  #footer .footer__servicios p a:hover {
-    color: bisque;
-  }
 }
 @media (max-width: 420px) {
   * {
@@ -436,7 +378,6 @@ main {
   }
   body {
     font-family: "-apple-system, BlinkMacSystemFont", "Segoe UI", "Roboto, Oxygen, Ubuntu, Cantarell", "Open Sans", "Helvetica Neue", "sans-serif";
-    width: 100vh;
   }
   #grid-skt {
     display: grid;
@@ -495,7 +436,7 @@ main {
     text-align: center;
     max-width: 530px;
   }
-  #intro, #intro2 {
+  #intro, #intro2, #formulario, #intro3 {
     background-image: url(../img/fondo1.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -505,9 +446,39 @@ main {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    width: 164vh;
+    width: 100%;
   }
-  #intro .intro2__text-1 p, #intro2 .intro2__text-1 p {
+  #intro .map1, #intro2 .map1, #formulario .map1, #intro3 .map1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+  #intro .formulario__title h2, #intro2 .formulario__title h2, #formulario .formulario__title h2, #intro3 .formulario__title h2 {
+    color: white;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  #intro .formulario__form, #intro2 .formulario__form, #formulario .formulario__form, #intro3 .formulario__form {
+    display: flex;
+    align-items: center;
+  }
+  #intro .formulario__form .txt1, #intro2 .formulario__form .txt1, #formulario .formulario__form .txt1, #intro3 .formulario__form .txt1 {
+    width: auto;
+  }
+  #intro .formulario__form .txt2, #intro2 .formulario__form .txt2, #formulario .formulario__form .txt2, #intro3 .formulario__form .txt2 {
+    width: auto;
+  }
+  #intro .formulario__form .mail, #intro2 .formulario__form .mail, #formulario .formulario__form .mail, #intro3 .formulario__form .mail {
+    width: auto;
+  }
+  #intro .formulario__form .cons, #intro2 .formulario__form .cons, #formulario .formulario__form .cons, #intro3 .formulario__form .cons {
+    width: auto;
+    height: auto;
+  }
+  #intro .intro2__text-1 p, #intro2 .intro2__text-1 p, #formulario .intro2__text-1 p, #intro3 .intro2__text-1 p {
     color: white;
     max-width: 15em;
     width: 100%;
@@ -515,30 +486,6 @@ main {
     justify-content: center;
     font-size: 13px;
     font-weight: bold;
-  }
-  #formulario {
-    background-image: url(../img/fondo1.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 50em;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    width: 164vh;
-  }
-  #intro3 {
-    background-image: url(../img/fondo1.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 55em;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    width: fit-content;
   }
   .intro__flecha img {
     width: 90px;
@@ -548,31 +495,11 @@ main {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
   }
-  .formulario__title h2 {
-    color: white;
-    font-size: 30px;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 60px;
-  }
-  .txt1 {
-    width: 12.2em;
-  }
-  .txt2 {
-    width: 12.5em;
-  }
-  .mail {
-    width: 25em;
-  }
-  .cons {
-    width: 25em;
-    height: 5em;
-  }
   #footer {
     background-color: rgb(233, 233, 233);
     display: flex;
-    justify-content: space-between;
-    color: black;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
   }
   #footer .footer__redes {

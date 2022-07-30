@@ -13,16 +13,15 @@
         height: auto;
       }
     #intro, #formulario, #intro2, #intro3 {
-      background-image: $background-image;
-    background-repeat: $background-repeat;
-    background-size: $background-size;
-    background-position: $background-position;
+    //   background-image: $background-image;
+    // background-repeat: $background-repeat;
+    // background-size: $background-size;
+    // background-position: $background-position;
     height: 40em; 
     display: flex;
-    flex-flow:$flex-flow;
-    justify-content: $justify-content;
-    align-items: $align-items; 
-    width: 48em;
+    // flex-flow:$flex-flow;
+    // justify-content: $justify-content;
+    // align-items: $align-items; 
     .intro__flecha { 
         img {
             width: 90px;
@@ -48,69 +47,66 @@
     justify-content: space-evenly;
     align-content: center;
     justify-items: center;
-    iframe {
-        .video__1 {
-           margin: 30px 30px;
-           grid-area: vid1;
-           width: 100%;
-       }
-       .video__2 { 
-           margin: 30px 30px;
-           grid-area: vid2;
-           width: 100%;
-       }
-   } 
-   .video__text1 {
-       color: black;
-       grid-area: text1;
-       width: 700px;
-       width: 100%;
-       text-align: center;
-       max-width: 530px;
-   }
-   .video__text2 {
-       color: black;
-       grid-area: text2;
-       width: 700px;
-       width: 100%;
-       text-align: center;
-       max-width: 530px;
-   }
-} 
+    
+//     iframe {
+//         .video__1 {
+//            margin: 30px 30px;
+//            grid-area: vid1;
+//            width: 100%;
+//        }
+//        .video__2 { 
+//            margin: 30px 30px;
+//            grid-area: vid2;
+//            width: 100%;
+//        }
+//    } 
+//    .video__text1 {
+//        color: black;
+//        grid-area: text1;
+//        width: 700px;
+//        width: 100%;
+//        text-align: center;
+//        max-width: 530px;
+//    }
+//    .video__text2 {
+//        color: black;
+//        grid-area: text2;
+//        width: 700px;
+//        width: 100%;
+//        text-align: center;
+//        max-width: 530px;
+//    }
+// } 
 
-#footer {
-    background-color:rgb(233, 233, 233);
-    display: flex;
-    justify-content: space-between;
-    color: black;
-    width: 100%;
-    .footer__redes {
-        float: left;
-        padding: 10px;
-        a {
-            text-decoration: none;
-            color: black;
-            list-style: none;
-            &:hover {
-                color: bisque;
-            }
-        }
-    }
-    .footer__servicios {
-        float: right;
-        padding: 10px;
-        h4 {
-            margin-left: 100px;
-        }
-        p {
-            a {
-                text-decoration: none;
-                color: black;
-                &:hover {
-                    color: bisque;
-                }
-            }
-        }
-    }
+// #footer {
+//     .footer__redes {
+//         float: left;
+//         padding: 10px;
+//         a {
+//             text-decoration: none;
+//             color: black;
+//             list-style: none;
+//             &:hover {
+//                 color: bisque;
+//             }
+//         }
+//     }
+//     .footer__servicios {
+//         float: right;
+//         padding: 10px;
+//         h4 {
+//             margin-left: 100px;
+//         }
+//         p {
+//             a {
+//                 text-decoration: none;
+//                 color: black;
+//                 &:hover {
+//                     color: bisque;
+//                 }
+//             }
+//         }
+//     }
+// }
 }
 }

@@ -3,11 +3,10 @@
         padding: 0;
         margin: 0;
         box-sizing: border-box;
-      }
-      body {
+    }
+    body {
         font-family: $font-family;
-        width: 100vh;
-      }
+    }
       #grid-skt {
         display: grid;
         grid-template-columns: 1fr;
@@ -15,7 +14,7 @@
         grid-template-rows: auto auto auto auto;
         height: auto;
       }
-    #header1 {
+      #header1 {
         display: none;
     }
     #header2 {
@@ -27,7 +26,7 @@
         grid-template-rows: 70px auto 530px 85px;
         grid-template-rows: auto auto auto auto;
         height: auto;
-      }
+    }
     #video {
         background-color: white;
         display: grid;
@@ -43,118 +42,104 @@
         justify-items: center;
         iframe {
             .video__1 {
-               margin: 30px 30px;
-               grid-area: vid1;
-               width: 100%;
-           }
-           .video__2 { 
-               margin: 30px 30px;
-               grid-area: vid2;
-               width: 100%;
-           }
-       } 
-       .video__text1 {
-           color: black;
-           grid-area: text1;
-           width: 700px;
-           width: 100%;
-           text-align: center;
-           max-width: 530px;
-       }
-       .video__text2 {
-           color: black;
-           grid-area: text2;
-           width: 700px;
-           width: 100%;
-           text-align: center;
-           max-width: 530px;
-       }
-    
-    }
-    #intro, #intro2 {
-        background-image: $background-image;
-      background-repeat: $background-repeat;
-      background-size: $background-size;
-      background-position: $background-position;
-      height: 55em;
-      display: flex;
-      flex-flow:$flex-flow;
-      justify-content: $justify-content;
-      align-items: $align-items;
-      width: 164vh;
-      .intro2__text-1 { 
-        p {
-            color: white;
-            max-width: 15em;
-            width:100% ;
-            align-items: center;
-            justify-content: center;
-            font-size: 13px;
-            font-weight: bold;
+                margin: 30px 30px;
+                grid-area: vid1;
+                width: 100%;
+            }
+            .video__2 { 
+                margin: 30px 30px;
+                grid-area: vid2;
+                width: 100%;
+            }
+        } 
+        .video__text1 {
+            color: black;
+            grid-area: text1;
+            width: 700px;
+            width: 100%;
+            text-align: center;
+            max-width: 530px;
+        }
+        .video__text2 {
+            color: black;
+            grid-area: text2;
+            width: 700px;
+            width: 100%;
+            text-align: center;
+            max-width: 530px;
         }
     }
-    }
-    #formulario {
+    #intro, #intro2, #formulario, #intro3 {
         background-image: $background-image;
-      background-repeat: $background-repeat;
-      background-size: $background-size;
-      background-position: $background-position;
-      height: 50em;
-      display: flex;
-      flex-flow:$flex-flow;
-      justify-content: $justify-content;
-      align-items: $align-items;
-      width: 164vh;
-    }
-    #intro3 {
-        background-image: $background-image;
-      background-repeat: $background-repeat;
-      background-size: $background-size;
-      background-position: $background-position;
-      height: 55em;
-      display: flex;
-      flex-flow:$flex-flow;
-      justify-content: $justify-content;
-      align-items: $align-items;
-      width: fit-content;
-    }
-      .intro__flecha { 
-          img {
-              width: 90px;
-              transform: translate(0, 225px);
-              animation-name: mi-flecha;
-              animation-duration: 1.5s;
-              animation-iteration-count: infinite;
-              animation-timing-function: linear;
-          }
-      }
-      .formulario__title {
-        h2 {
-            color: white;
-            font-size: 30px;
-            justify-content: center;
+        background-repeat: $background-repeat;
+        background-size: $background-size;
+        background-position: $background-position;
+        height: 55em;
+        display: flex;
+        flex-flow:$flex-flow;
+        justify-content: $justify-content;
+        align-items: $align-items;
+        width: 100%;
+        .map1 {
+            width: 100%;
+            height: auto;
+            display: flex;
             align-items: center;
-            margin-bottom: 60px;
         }
+        .formulario__title {
+            h2 {
+                color: white;
+                font-size: 20px;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 60px;
+            }
+        }
+        .formulario__form {
+            display: flex;
+            align-items: center;
+            .txt1 {
+                width: auto;
+            }
+            .txt2 {
+                width: auto;
+            }
+            .mail {
+                width: auto;
+            }
+            .cons {
+                width: auto;
+                height: auto;
+            }
+        }
+        .intro2__text-1 { 
+            p {
+                color: white;
+                max-width: 15em;
+                width:100% ;
+                align-items: center;
+                justify-content: center;
+                font-size: 13px;
+                font-weight: bold;
+            }
+        }
+       
     }
-    .txt1 {
-        width: 12.2em;
-    }
-    .txt2 {
-        width: 12.5em;
-    }
-    .mail {
-        width: 25em;
-    }
-    .cons {
-        width: 25em;
-        height: 5em;
+    .intro__flecha { 
+        img {
+            width: 90px;
+            transform: translate(0, 225px);
+            animation-name: mi-flecha;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
     }
     #footer {
         background-color:rgb(233, 233, 233);
         display: flex;
-        justify-content: space-between;
-        color: black;
+        flex-direction: column;
+        align-items: center;
         width: 100%;
         .footer__redes {
             float: left;
@@ -162,17 +147,16 @@
             font-size: 15px;
             h4 {
                 font-size: 15px;
-            
-            a {
-                text-decoration: none;
-                color: black;
-                list-style: none;
-                font-size: 15px;
-                &:hover {
-                    color: bisque;
+                a {
+                    text-decoration: none;
+                    color: black;
+                    list-style: none;
+                    font-size: 15px;
+                    &:hover {
+                        color: bisque;
+                    }
                 }
             }
-        }
         }
         .footer__servicios {
             float: right;
@@ -194,6 +178,5 @@
             }
         }
     }
-    
 }
       
