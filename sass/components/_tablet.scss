@@ -49,4 +49,39 @@
     align-content: center;
     justify-items: center;
 }
+#footer {
+    background-color:rgb(233, 233, 233);
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    width: 100%;
+    .footer__redes {
+        float: left;
+        padding: 10px;
+        a {
+            text-decoration: none;
+            color: black;
+            list-style: none;
+            &:hover {
+                color: bisque;
+            }
+        }
+    }
+    .footer__servicios {
+        float: right;
+        padding: 10px;
+        h4 {
+            margin-left: 100px;
+        }
+        p {
+            a {
+                text-decoration: none;
+                color: black;
+                &:hover {
+                    color: bisque;
+                }
+            }
+        }
+    }
+}
 }

@@ -6,6 +6,7 @@
       }
       body {
         font-family: $font-family;
+        width: 100vh;
       }
       #grid-skt {
         display: grid;
@@ -51,7 +52,7 @@
       flex-flow:$flex-flow;
       justify-content: $justify-content;
       align-items: $align-items;
-      width: auto;
+      width: 164vh;
       .intro2__text-1 { 
         p {
             color: white;
@@ -74,7 +75,7 @@
       flex-flow:$flex-flow;
       justify-content: $justify-content;
       align-items: $align-items;
-      width: fit-content;
+      width: 164vh;
     }
     #intro3 {
         background-image: $background-image;
@@ -125,6 +126,7 @@
         display: flex;
         justify-content: space-between;
         color: black;
+        width: 100%;
         .footer__redes {
             float: left;
             padding: 10px;
@@ -163,5 +165,6 @@
             }
         }
     }
+    
 }
       
